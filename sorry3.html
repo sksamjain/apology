@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="apology_style.css" />
+  <title>Still Not Forgiven?</title>
+  <style>
+    /* Counter UI */
+    #dodge-counter-wrap {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(250,250,255,0.9));
+      border-radius: 14px;
+      padding: 10px 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      text-align: center;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      z-index: 9999;
+      user-select: none;
+      width: 220px;
+    }
+
+    #dodge-counter {
+      font-weight: 900;
+      font-size: 18px;
+      letter-spacing: 0.6px;
+    }
+
+    #dodge-message {
+      font-size: 12px;
+      margin-top: 6px;
+      opacity: 0.95;
+    }
+
+    .forgive-glow {
+      box-shadow: 0 8px 24px rgba(255, 140, 120, 0.35);
+      border-radius: 8px;
+      padding: 10px 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Are you still not forgiving? 🥺</h1>
+    <p>Think again… please? 😢</p>
+
+    <div class="btn">
+      <a class="primary" href="forgiven.html">Okay, I forgive you ❤️</a>
+      <a class="secondary" id="move-random" href="#">Kar dia mana bol kya karega</a>
+    </div>
+  </div>
+
+  <!-- Counter UI -->
+  <div id="dodge-counter-wrap" aria-live="polite">
+    <div id="dodge-counter">Attempts: 0 / 20</div>
+    <div id="dodge-message">Click the naughty button — if you dare.</div>
+  </div>
+
+  <script src="apology_script.js"></script>
+</body>
+</html>
